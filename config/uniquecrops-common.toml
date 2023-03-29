@@ -1,0 +1,33 @@
+#Time (in minutes) it takes for Millennium crop to advance a stage.
+#Range: > 10
+millenniumTime = 10
+#Cooldown time (in ticks) for rubik's cube between successful teleports.
+#Range: > 30
+cubeCooldown = 3000
+#Amount of energy gained per tick while the Industria crop grows.
+#Range: 1 ~ 200
+energyPerTick = 20
+#Lets the Petramia crop convert obsidian instead of bedrock. Use if there are no bedrock nearby to convert.
+convertObsidian = false
+moonPhase = true
+hasTorch = true
+likesDarkness = true
+dryFarmland = true
+underFarmland = true
+burningPlayer = true
+hellWorld = true
+likesLilypads = true
+likesHeights = true
+thirstyPlant = true
+hungryPlant = true
+likesChicken = true
+likesRedstone = true
+vampirePlant = true
+fullBrightness = true
+likesWarts = true
+likesCooking = true
+likesBrewing = true
+likesCheckers = true
+dontBonemeal = true
+selfSacrifice = true
+

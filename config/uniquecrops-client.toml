@@ -1,0 +1,7 @@
+#Adjust placement of Wildwood staff GUI on the x axis.
+#Range: -1000 ~ 1000
+guiWidth = -191
+#Adjust placement of Wildwood staff GUI on the y axis.
+#Range: -1000 ~ 1000
+guiHeight = -50
+
