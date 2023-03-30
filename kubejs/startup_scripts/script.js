@@ -4,7 +4,7 @@ console.info('Hello, World! (You will only see this line once in console, during
 
 onEvent('item.registry', event => {
 	event.create("rainbow_petal").displayName("Rainbow Petal");
-	event.create("undead_transumatation_catalyst").displayName("Undead Transmutation Catalyst").maxDamage(100);
+	event.create("undead_transmutation_catalyst").displayName("Undead Transmutation Catalyst").maxDamage(100);
 })
 
 onEvent('block.registry', event => {

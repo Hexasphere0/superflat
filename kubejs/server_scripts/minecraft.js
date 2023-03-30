@@ -34,6 +34,13 @@ onEvent('recipes', event => {
         ],
     ).damageIngredient(Item.of("kubejs:undead_transmutation_catalyst")).keepIngredient("kubejs:undead_transmutation_catalyst")
 
+    event.shapeless(
+        'minecraft:flint',
+        [
+            "3x minecraft:gravel"
+        ]
+    )
+
 
     event.shaped(
         "minecraft:campfire",

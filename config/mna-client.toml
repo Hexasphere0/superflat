@@ -41,6 +41,6 @@
 	ma_modifier_tip = false
 	ma_damage_stacking_tip = false
 	ma_multiblock_tip = false
-	ma_prettyblocks_tip = false
+	ma_prettyblocks_tip = true
 	ma_bindwounds_tip = false
 

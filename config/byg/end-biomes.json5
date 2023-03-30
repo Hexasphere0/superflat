@@ -77,6 +77,10 @@ If your settings in this file seem to have to no effect on the generation of the
 			{
 				"data": "minecraft:the_end",
 				"weight": 0
+			},
+			{
+				"data": "evilcraft:degraded",
+				"weight": 2
 			}
 		]
 	},

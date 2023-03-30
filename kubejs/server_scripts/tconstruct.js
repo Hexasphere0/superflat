@@ -238,14 +238,4 @@ onEvent("recipes", event => {
         },
         temperature: 1500
     })
-
-    // fuels
-    event.custom({
-        type: "tconstruct:melting_fuel",
-        item: {
-            name: "kubejs:mycelial_compound",
-        },
-        "duration": 100,
-        "temperature": 1000
-    })
 })
