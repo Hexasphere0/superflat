@@ -15,7 +15,7 @@ onEvent("recipes", event => {
         "minecraft:paper",
         "minecraft:nether_brick",
         "tconstruct:scorched_glass",
-        "tconstruct:seared_brick",
+        "tconstruct:scorched_brick",
         "tconstruct:grout",
         "tconstruct:seared_melter",
         "tconstruct:seared_heater",
@@ -44,11 +44,15 @@ onEvent("recipes", event => {
 
     event.remove({output: "immersiveengineering:component_steel", type: "minecraft:shaped"})
     event.remove({output: "immersiveengineering:component_iron", type: "minecraft:shaped"})
+    
+    event.remove({output: "minecraft:flint", type: "create:milling"})
 
     let removeShapedOnly = [
         "minecraft:campfire",
         "immersiveengineering:component_steel",
-        "immersiveengineering:component_iron"
+        "immersiveengineering:component_iron",
+        "minecraft:flint",
+        "minecraft:andesite"
     ]
 
     for (let i = 0; i < removeShapedOnly.length; i++){

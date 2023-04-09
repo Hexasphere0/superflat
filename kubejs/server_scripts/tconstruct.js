@@ -120,30 +120,11 @@ onEvent("recipes", event => {
         }
     )
 
-    event.custom({
-        type: "tconstruct:alloy",
-        inputs: [
-            {
-                name: "tconstruct:molten_bronze",
-                amount: 180
-            },
-            {
-                name: "tconstruct:molten_amethyst",
-                amount: 100
-            }
-        ],
-        result: {
-            fluid: "tconstruct:molten_amethyst_bronze",
-            amount: 180
-        },
-        temperature: 1000
-    })
-
     // foundry+ (gated behind nether)
     // come back to this later
 
     event.blasting("minecraft:nether_brick", "tconstruct:nether_grout")
-    event.recipes.tconstruct.casting_table("tconstruct:seared_brick", "tconstruct:molten_constantan", 20).cast("minecraft:nether_brick").consumeCast()
+    event.recipes.tconstruct.casting_table("tconstruct:scorched_brick", "tconstruct:molten_constantan", 20).cast("minecraft:nether_brick").consumeCast()
 
     event.shaped(
         "2x tconstruct:scorched_glass",
@@ -158,17 +139,62 @@ onEvent("recipes", event => {
         }
     )
 
-    // event.shaped(
-    //     "tconstruct:scorched_fuel_tank",
-    //     [
-    //         "B"
-    //     ]
-    // )
+    // alloys
 
-    // end+
     event.custom({
-        type: "tconstruct:alloy",
-        inputs: [
+        type: "create:mixing",
+        ingredients: [
+            {
+                fluid: "tconstruct:molten_amethyst",
+                amount: 100
+            },
+            {
+                fluid: "tconstruct:molten_bronze",
+                amount: 180
+            }
+        ],
+        results: [
+            {
+                fluid: "tconstruct:molten_amethyst_bronze",
+                amount: 180
+            }
+        ]
+    })
+
+    event.custom({
+        type: "tconstruct:melting",
+        ingredient: {
+            item: "minecraft:cobblestone"
+        },
+        result: {
+          fluid: "minecraft:lava",
+          amount: 500
+        }
+    })
+
+    event.custom({
+        type: "create:mixing",
+        ingredients: [
+            {
+                fluid: "tconstruct:molten_copper",
+                amount: 180
+            },
+            {
+                fluid: "tconstruct:molten_tin",
+                amount: 90
+            }
+        ],
+        results: [
+            {
+                fluid: "tconstruct:molten_bronze",
+                amount: 180
+            }
+        ]
+    })
+
+    event.custom({
+        type: "create:mixing",
+        ingredients: [
             {
                 name: "tconstruct:molten_steel",
                 amount: 90
@@ -186,16 +212,17 @@ onEvent("recipes", event => {
                 amount: 100
             },
         ],
-        result: {
-            fluid: "tconstruct:molten_slimesteel",
-            amount: 180
-        },
-        temperature: 1000
+        results: [
+            {
+                fluid: "tconstruct:molten_slimesteel",
+                amount: 180
+            }
+        ]
     })
 
     event.custom({
-        type: "tconstruct:alloy",
-        inputs: [
+        type: "create:mixing",
+        ingredients: [
             {
                 name: "tconstruct:molten_cobalt",
                 amount: 90
@@ -209,15 +236,16 @@ onEvent("recipes", event => {
                 amount: 45
             }
         ],
-        result: {
-            fluid: "tconstruct:molten_hepatizon",
-            amount: 180
-        },
-        temperature: 1500
+        results: [
+            {
+                fluid: "tconstruct:molten_hepatizon",
+                amount: 180
+            }
+        ]
     })
-
+    
     event.custom({
-        type: "tconstruct:alloy",
+        type: "create:mixing",
         inputs: [
             {
                 name: "tconstruct:molten_netherite",
@@ -232,10 +260,21 @@ onEvent("recipes", event => {
                 amount: 100
             }
         ],
-        result: {
-            fluid: "tconstruct:molten_queen_slime",
-            amount: 180
-        },
-        temperature: 1500
+        results: [
+            {
+                fluid: "tconstruct:molten_queen_slime",
+                amount: 180
+            }
+        ]
     })
+
+    // event.shaped(
+    //     "tconstruct:scorched_fuel_tank",
+    //     [
+    //         "B"
+    //     ]
+    // )
+
+    // end+
+
 })
