@@ -167,9 +167,11 @@ onEvent("recipes", event => {
             item: "minecraft:cobblestone"
         },
         result: {
-          fluid: "minecraft:lava",
-          amount: 500
-        }
+            fluid: "minecraft:lava",
+            amount: 500
+        },
+        temperature: 500,
+        time: 20
     })
 
     event.custom({
@@ -196,19 +198,19 @@ onEvent("recipes", event => {
         type: "create:mixing",
         ingredients: [
             {
-                name: "tconstruct:molten_steel",
+                item: "tconstruct:molten_steel",
                 amount: 90
             },
             {
-                name: "tconstruct:molten_slime",
+                item: "tconstruct:molten_slime",
                 amount: 100
             },
             {
-                name: "tconstruct:molten_skyslime",
+                item: "tconstruct:molten_skyslime",
                 amount: 100
             },
             {
-                name: "tconstruct:molten_enderslime",
+                item: "tconstruct:molten_enderslime",
                 amount: 100
             },
         ],
@@ -224,15 +226,15 @@ onEvent("recipes", event => {
         type: "create:mixing",
         ingredients: [
             {
-                name: "tconstruct:molten_cobalt",
+                item: "tconstruct:molten_cobalt",
                 amount: 90
             },
             {
-                name: "tconstruct:molten_certus_quartz",
+                item: "tconstruct:molten_certus_quartz",
                 amount: 50
             },
             {
-                name: "tconstruct:molten_copper",
+                item: "tconstruct:molten_copper",
                 amount: 45
             }
         ],
@@ -246,17 +248,17 @@ onEvent("recipes", event => {
     
     event.custom({
         type: "create:mixing",
-        inputs: [
+        ingredients: [
             {
-                name: "tconstruct:molten_netherite",
+                item: "tconstruct:molten_netherite",
                 amount: 180
             },
             {
-                name: "tconstruct:molten_electrum",
+                item: "tconstruct:molten_electrum",
                 amount: 90
             },
             {
-                name: "tconstruct:molten_magma",
+                item: "tconstruct:molten_magma",
                 amount: 100
             }
         ],
@@ -267,14 +269,4 @@ onEvent("recipes", event => {
             }
         ]
     })
-
-    // event.shaped(
-    //     "tconstruct:scorched_fuel_tank",
-    //     [
-    //         "B"
-    //     ]
-    // )
-
-    // end+
-
 })

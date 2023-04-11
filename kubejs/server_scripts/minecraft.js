@@ -179,7 +179,7 @@ onEvent('recipes', event => {
 
     event.recipes.createSplashing(
         [
-            Item.of('minecraft:zinc_nugget').withChance(50),
+            Item.of('create:zinc_nugget').withChance(50),
             'minecraft:raw_copper'
         ],
         'minecraft:red_sand'
@@ -210,7 +210,16 @@ onEvent('recipes', event => {
     event.recipes.createCrushing(
         [
             "2x minecraft:raw_iron",
-            Item.of('create:zinc_nugget').withChance(20)
-        ]
+            Item.of('create:zinc_nugget').withChance(0.3)
+        ],
+        'create:crimsite'
+    )
+
+    event.recipes.createCrushing(
+        [
+            "minecraft:lapis",
+            Item.of('create:tin_nugget').withChance(0.5)
+        ],
+        'create:asurine'
     )
 })
