@@ -83,6 +83,14 @@ onEvent('recipes', event => {
         ]
     )
 
+    undeadTransmutationShapeless(
+        event,
+        'minecraft:red_sand',
+        [
+            "minecraft:terracotta"
+        ]
+    )
+
     event.shapeless(
         'minecraft:flint',
         [
@@ -93,14 +101,13 @@ onEvent('recipes', event => {
     event.shaped(
         "minecraft:campfire",
         [
-            " C ",
+            " S ",
             "SFS",
             "BBB"
         ],
         {
             "S": "minecraft:stick",
             "F": "minecraft:flint",
-            "C": "minecraft:coal",
             "B": "#minecraft:logs"
         }
     )
@@ -117,6 +124,14 @@ onEvent('recipes', event => {
             "F": "minecraft:flint",
             "S": "minecraft:cobblestone"
         }
+    )
+
+    event.shapeless(
+        "minecraft:raw_iron",
+        [
+            "minecraft:water_bucket",
+            "2x minecaft:red_sand"
+        ]
     )
 
     event.shaped(
@@ -169,18 +184,18 @@ onEvent('recipes', event => {
     )
 
     event.recipes.createMixing(
-        'minecraft:clay', 
+        'minecraft:andesite',
         [
-            '2x minecraft:sand',
-            'minecraft:gravel',
-            Fluid.of('minecraft:water', 500)
+            'minecraft:sand',
+            'minecraft:cobblestone',
+            Fluid.of('minecraft:lava', 10)
         ]
     )
 
     event.recipes.createSplashing(
         [
-            Item.of('create:zinc_nugget').withChance(50),
-            'minecraft:raw_copper'
+            Item.of('minecraft:iron_nugget').withChance(0.5),
+            Item.of('minecraft:raw_copper').withChance(0.2),
         ],
         'minecraft:red_sand'
     )
@@ -199,6 +214,43 @@ onEvent('recipes', event => {
         ]
     })
 
+    event.custom({
+        type: "create:haunting",
+        ingredients: [
+            {
+                item: "create:scoria"
+            }
+        ],
+        results: [
+            {
+                item: "create:veridium"
+            }
+        ]
+    })
+
+    event.custom({
+        type: "create:haunting",
+        ingredients: [
+            {
+                item: "minecraft:calcite"
+            }
+        ],
+        results: [
+            {
+                item: "create:ochrum"
+            }
+        ]
+    })
+
+    event.recipes.createMixing(
+        Fluid.of('create:chocolate', 250),
+        [
+            '3x minecraft:sugar',
+            'minecraft:cocoa_beans',
+            Fluid.of('minecraft:milk', 250)
+        ]
+    )
+
     event.recipes.createMixing(
         'create:crimsite',
         [
@@ -210,16 +262,54 @@ onEvent('recipes', event => {
     event.recipes.createCrushing(
         [
             "2x minecraft:raw_iron",
-            Item.of('create:zinc_nugget').withChance(0.3)
+            Item.of('create:zinc_nugget').withChance(0.3),
+            Item.of("minecraft:redstone").withChance(0.8)
+        ],
+        'create:crimsite'
+    )
+
+    event.recipes.createMilling(
+        [
+            "2x minecraft:raw_iron",
+            Item.of("minecraft:redstone").withChance(0.5)
         ],
         'create:crimsite'
     )
 
     event.recipes.createCrushing(
         [
-            "minecraft:lapis",
-            Item.of('create:tin_nugget').withChance(0.5)
+            "minecraft:lapis_lazuli",
+            Item.of('thermal:tin_nugget').withChance(0.5)
         ],
         'create:asurine'
+    )
+
+    event.recipes.createCompacting(
+        'minecraft:calcite',
+        [
+            '2x minecraft:tuff',
+            Fluid.of("minecraft:lava", 50)
+        ]
+    )
+
+    event.recipes.createCompacting(
+        "minecraft:tuff",
+        [
+            "minecraft:andesite",
+            Fluid.of("minecraft:lava", 50)
+        ]
+    )
+
+    event.recipes.createMilling(
+        [
+            Item.of('2x minecraft:quartz'),
+            'minecraft:soul_sand'
+        ],
+        'create:scoria'
+    )
+
+    event.recipes.createMilling(
+        Item.of('minecraft:diamond').withChance(0.6),
+        'create:veridium'
     )
 })

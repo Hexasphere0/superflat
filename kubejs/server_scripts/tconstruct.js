@@ -175,6 +175,19 @@ onEvent("recipes", event => {
     })
 
     event.custom({
+        type: "tconstruct:melting",
+        ingredient: {
+            item: "#minecraft:saplings"
+        },
+        result: {
+            fluid: "minecraft:water",
+            amount: 1000
+        },
+        temperature: 500,
+        time: 20
+    })
+
+    event.custom({
         type: "create:mixing",
         ingredients: [
             {

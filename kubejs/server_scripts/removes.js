@@ -61,4 +61,11 @@ onEvent("recipes", event => {
 
     event.remove({output: "tconstruct:seared_brick", type: "minecraft:smelting"})
     event.remove({output: "minecraft:fermented_spider_eye", type: "extendedmushrooms:fairy_ring_recipe"})
+
+    event.remove({input: "create:crimsite"})
+    event.remove({input: "minecraft:tuff", type: "create:crushing"})
+    event.remove({input: "create:crimsite", type: "create:crushing"})
+
+    event.remove({output: "minecraft:iron_ingot", type: "minecraft:smelting"})
+    event.remove({output: "minecraft"})
 })

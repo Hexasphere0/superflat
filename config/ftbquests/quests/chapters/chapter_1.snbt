@@ -1,0 +1,263 @@
+{
+	id: "4F5CDFBD2E152E7C"
+	group: ""
+	order_index: 0
+	filename: "chapter_1"
+	title: "Chapter 1"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: -0.5d
+			shape: "hexagon"
+			id: "5E09BC20A3D9AE76"
+			tasks: [{
+				id: "25ED6A0DC63E8AE4"
+				type: "item"
+				item: "minecraft:oak_log"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			shape: "hexagon"
+			dependencies: ["44F33F273B82331E"]
+			id: "36DC41048577BA62"
+			tasks: [{
+				id: "6AFE183318A4A742"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			shape: "hexagon"
+			dependencies: [
+				"1A686D935FD95BFC"
+				"36DC41048577BA62"
+			]
+			id: "08BD0C60702B2B53"
+			tasks: [{
+				id: "08633FF4BD5718EA"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.5d
+			shape: "hexagon"
+			dependencies: ["5E09BC20A3D9AE76"]
+			id: "4152D59DB9EC3C49"
+			tasks: [{
+				id: "646E294D3A699036"
+				type: "item"
+				item: {
+					id: "minecraft:wooden_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			shape: "hexagon"
+			dependencies: ["4152D59DB9EC3C49"]
+			id: "36998CBAB7B06DDD"
+			tasks: [{
+				id: "2CAC28F4B5A58DEB"
+				type: "item"
+				item: "minecraft:granite"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			shape: "hexagon"
+			dependencies: [
+				"22F84B2308C6A96D"
+				"08BD0C60702B2B53"
+			]
+			id: "48C4316139EBB9BD"
+			tasks: [{
+				id: "65AE102E4BD86340"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			shape: "hexagon"
+			dependencies: ["5E09BC20A3D9AE76"]
+			id: "2E9605DA6E2C61C6"
+			tasks: [{
+				id: "2032468274E18604"
+				type: "item"
+				item: "minecraft:campfire"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			shape: "hexagon"
+			dependencies: ["33DB8087C6C3E62D"]
+			id: "31CA4E39E859017D"
+			tasks: [{
+				id: "2337C1553CEBB68E"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			shape: "hexagon"
+			dependencies: ["2E9605DA6E2C61C6"]
+			id: "33DB8087C6C3E62D"
+			tasks: [{
+				id: "7C321F96945EE2F2"
+				type: "item"
+				item: "minecraft:brick"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			shape: "hexagon"
+			dependencies: [
+				"2C8405368647CF16"
+				"31CA4E39E859017D"
+			]
+			id: "06DB590C0FB74959"
+			tasks: [{
+				id: "368120DA7117F688"
+				type: "item"
+				item: "ironfurnaces:copper_furnace"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			shape: "hexagon"
+			dependencies: [
+				"36998CBAB7B06DDD"
+				"22F84B2308C6A96D"
+			]
+			id: "2C8405368647CF16"
+			tasks: [{
+				id: "34917DA97CB820AB"
+				type: "item"
+				item: "minecraft:copper_ingot"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			shape: "hexagon"
+			dependencies: ["48C4316139EBB9BD"]
+			id: "616BFEF811063197"
+			tasks: [{
+				id: "3A85118FB044A29F"
+				type: "item"
+				item: "tconstruct:seared_heater"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.5d
+			shape: "hexagon"
+			id: "6E4E7F8FCE3C93F1"
+			tasks: [{
+				id: "74DCF6CF58D20105"
+				type: "item"
+				item: "tconstruct:seared_melter"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			shape: "hexagon"
+			dependencies: [
+				"1A686D935FD95BFC"
+				"36DC41048577BA62"
+			]
+			id: "4945CD4FA2E78737"
+			tasks: [{
+				id: "7D45F4A7133A3211"
+				type: "item"
+				item: "minecraft:raw_iron"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			shape: "hexagon"
+			dependencies: [
+				"6E4E7F8FCE3C93F1"
+				"616BFEF811063197"
+				"4945CD4FA2E78737"
+			]
+			id: "0C83D9E0AA3852FB"
+			tasks: [{
+				id: "5025B75D8D4F2564"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			shape: "hexagon"
+			dependencies: ["5E09BC20A3D9AE76"]
+			id: "1A686D935FD95BFC"
+			tasks: [{
+				id: "079442BAA42F5C5D"
+				type: "fluid"
+				fluid: "minecraft:water"
+				amount: 1000L
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			shape: "hexagon"
+			dependencies: ["31CA4E39E859017D"]
+			id: "22F84B2308C6A96D"
+			tasks: [{
+				id: "058F8D68215FF437"
+				type: "item"
+				item: "minecraft:blast_furnace"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			shape: "gear"
+			dependencies: ["0C83D9E0AA3852FB"]
+			id: "392EDF5C875AD570"
+			tasks: [{
+				id: "0686666E119C3A41"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			shape: "hexagon"
+			id: "44F33F273B82331E"
+			tasks: [{
+				id: "3944E4390C99AE7B"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
