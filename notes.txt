@@ -1,1 +1,28 @@
 Agricraft causes a crash with create on 3.1.4
+Malum also crashes
+
+Ae2 processors
+
+rose gold: logic processor (basic stuff)
+
+charged certus quartz: calculation processor (small item cells)
+
+diamond + prismarine: engineering processor (medium item cells + more advanced machines)
+
+fluix pearl + arcane diamond: compatablity processor (interfaces)
+
+lumium: estimation processor (fluids)
+
+iridium + infernal brick: duplication processor (crafting cpus)
+
+rainbow slate?: differential processor (medium crafting storage)
+
+blood magic something: matrix processor (spacial storage, deep disks)
+
+enderium + lithium: recursive processor (gas)
+
+terrasteel: clearance processor (larger crafting storage, applied botanistics)
+
+dice of fate: probability processor (large disks)
+
+matter ball: time processor (largest disks)
