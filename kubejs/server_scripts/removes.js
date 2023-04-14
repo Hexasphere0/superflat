@@ -45,6 +45,8 @@ onEvent("recipes", event => {
     event.remove({output: "immersiveengineering:component_steel", type: "minecraft:shaped"})
     event.remove({output: "immersiveengineering:component_iron", type: "minecraft:shaped"})
     
+    event.remove({output: "thermal:gold_dust", type: "occultism:crushing"})
+    
     event.remove({output: "minecraft:flint", type: "create:milling"})
 
     let removeShapedOnly = [

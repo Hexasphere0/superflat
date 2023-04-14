@@ -1,5 +1,36 @@
 {
   "bookGuiScale": 0,
-  "clickedVisualize": false,
-  "bookData": {}
+  "clickedVisualize": true,
+  "bookData": {
+    "naturesaura:book": {
+      "viewedEntries": [
+        "naturesaura:intro/botany",
+        "naturesaura:intro/aura",
+        "naturesaura:practices/gold_trees",
+        "naturesaura:practices/aura_plants",
+        "naturesaura:practices/tree_ritual"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "laserio:laseriobook": {
+      "viewedEntries": [
+        "laserio:laser_node",
+        "laserio:laser_connector"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "ars_nouveau:worn_notebook": {
+      "viewedEntries": [
+        "arsomega:items/arcane_compendium",
+        "ars_nouveau:getting_started/spell_mana",
+        "ars_nouveau:getting_started/source",
+        "ars_nouveau:source/agronomic_sourcelink",
+        "ars_nouveau:source/source_jar"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
 }
