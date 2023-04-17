@@ -35,7 +35,11 @@ onEvent("recipes", event => {
         "extendedmushrooms:honey_fungus",
         "extendedmushrooms:poisonous_mushroom",
         "extendedmushrooms:slime_fungus",
-        "spirit:soul_crystal_shard"
+        "spirit:soul_crystal_shard",
+        "woodenbucket:wooden_bucket",
+        "create:andesite_casing",
+        "create:mechanical_saw",
+        "create:mechanical_drill"
     ]
 
     for(let i = 0; i < removes.length; i++){

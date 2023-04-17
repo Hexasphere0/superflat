@@ -176,9 +176,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: "tconstruct:melting",
-        ingredient: {
-            item: "#minecraft:saplings"
-        },
+        ingredient: "#minecraft:saplings",
         result: {
             fluid: "minecraft:water",
             amount: 1000
@@ -215,15 +213,15 @@ onEvent("recipes", event => {
                 amount: 90
             },
             {
-                fluid: "tconstruct:molten_slime",
+                fluid: "tconstruct:slime",
                 amount: 100
             },
             {
-                fluid: "tconstruct:molten_skyslime",
+                fluid: "tconstruct:sky_slime",
                 amount: 100
             },
             {
-                fluid: "tconstruct:molten_enderslime",
+                fluid: "tconstruct:ender_slime",
                 amount: 100
             },
         ],

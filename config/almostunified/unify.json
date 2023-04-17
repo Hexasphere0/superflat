@@ -3,11 +3,12 @@
     "minecraft",
     "kubejs",
     "crafttweaker",
-    "create",
     "thermal",
+    "create",
     "biggerreactors",
-    "immersiveengineering",
-    "mekanism"
+    "mekanism",
+    "tconstruct",
+    "immersiveengineering"
   ],
   "stoneStrata": [
     "stone",
@@ -70,6 +71,7 @@
     "platinum",
     "potassium_nitrate",
     "ruby",
+    "rose_gold",
     "sapphire",
     "signalum",
     "silver",

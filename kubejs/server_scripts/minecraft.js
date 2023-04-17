@@ -111,6 +111,19 @@ onEvent('recipes', event => {
             "B": "#minecraft:logs"
         }
     )
+
+    event.shaped(
+        "woodenbucket:wooden_bucket",
+        [
+            "W W",
+            "W W",
+            "CWC"
+        ],
+        {
+            "W": "#minecraft:logs",
+            "C": "minecraft:clay"
+        }
+    )
     
     event.shaped(
         "minecraft:furnace",
