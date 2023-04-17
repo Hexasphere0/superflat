@@ -130,7 +130,7 @@ onEvent('recipes', event => {
         "minecraft:raw_iron",
         [
             "minecraft:water_bucket",
-            "2x minecaft:red_sand"
+            "2x minecraft:red_sand"
         ]
     )
 

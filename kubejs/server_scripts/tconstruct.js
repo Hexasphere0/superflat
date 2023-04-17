@@ -211,19 +211,19 @@ onEvent("recipes", event => {
         type: "create:mixing",
         ingredients: [
             {
-                item: "tconstruct:molten_steel",
+                fluid: "tconstruct:molten_steel",
                 amount: 90
             },
             {
-                item: "tconstruct:molten_slime",
+                fluid: "tconstruct:molten_slime",
                 amount: 100
             },
             {
-                item: "tconstruct:molten_skyslime",
+                fluid: "tconstruct:molten_skyslime",
                 amount: 100
             },
             {
-                item: "tconstruct:molten_enderslime",
+                fluid: "tconstruct:molten_enderslime",
                 amount: 100
             },
         ],
@@ -239,15 +239,15 @@ onEvent("recipes", event => {
         type: "create:mixing",
         ingredients: [
             {
-                item: "tconstruct:molten_cobalt",
+                fluid: "tconstruct:molten_cobalt",
                 amount: 90
             },
             {
-                item: "tconstruct:molten_certus_quartz",
+                fluid: "tconstruct:molten_certus_quartz",
                 amount: 50
             },
             {
-                item: "tconstruct:molten_copper",
+                fluid: "tconstruct:molten_copper",
                 amount: 45
             }
         ],
@@ -263,15 +263,15 @@ onEvent("recipes", event => {
         type: "create:mixing",
         ingredients: [
             {
-                item: "tconstruct:molten_netherite",
+                fluid: "tconstruct:molten_netherite",
                 amount: 180
             },
             {
-                item: "tconstruct:molten_electrum",
+                fluid: "tconstruct:molten_electrum",
                 amount: 90
             },
             {
-                item: "tconstruct:molten_magma",
+                fluid: "tconstruct:molten_magma",
                 amount: 100
             }
         ],
