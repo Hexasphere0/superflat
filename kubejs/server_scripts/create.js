@@ -7,7 +7,7 @@ onEvent('recipes', event => {
             "BRB"
         ],
         {
-            "L": "#minecraft:stripped_logs",
+            "L": "#forge:stripped_logs",
             "A": "create:andesite_alloy",
             "R": "thermal:rose_gold_plate",
             "B": "tconstruct:amethyst_bronze_ingot"

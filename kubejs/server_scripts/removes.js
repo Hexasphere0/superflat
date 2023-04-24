@@ -39,7 +39,9 @@ onEvent("recipes", event => {
         "woodenbucket:wooden_bucket",
         "create:andesite_casing",
         "create:mechanical_saw",
-        "create:mechanical_drill"
+        "create:mechanical_drill",
+        "thermal:drill_head",
+        "thermal:saw_blade"
     ]
 
     for(let i = 0; i < removes.length; i++){
